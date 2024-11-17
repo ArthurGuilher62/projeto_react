@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Lista de Tarefas - Mini Projeto
+## 📜 Descrição do Projeto
+Este mini projeto foi desenvolvido com base no [Projeto Prático](https://www.youtube.com/watch?v=0riHps91AzE&t=579s) disponibilizado pelo canal Programação Web no YouTube. O objetivo principal foi criar uma aplicação simples de lista de Contatos utilizando as tecnologias React, HTML, CSS e JSX.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📋 Sobre o Projeto
 
-## Available Scripts
+A aplicação permite que o usuário adicione, marque como concluídas e remova tarefas de uma lista. O projeto visa colocar em prática os conceitos fundamentais de React, como:
 
-In the project directory, you can run:
+- Criação de componentes.
+- Manipulação de estados com o `useState`.
+- Manipulação de eventos.
+- Renderização condicional.
+- Estruturação básica de um aplicativo React.
+- Utilização de Route.
 
-### `npm start`
+## 🖋️ Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Adicionar Contatos**: O usuário pode adicionar novos contatos.
+- **Remover Contatos**: O usuário pode excluir contatos.
+- **Persistência local**: As tarefas são armazenadas na memória do navegador (localStorage), para que o usuário não perca as tarefas ao atualizar a página.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tecnologias Utilizadas
 
-### `npm test`
+- **React**: Para construção da interface e gestão do estado.
+- **HTML & CSS**: Para estruturar e estilizar a página.
+- **JSX**: Para escrever a estrutura de componentes de maneira concisa e legível.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📚 Requisitos
 
-### `npm run build`
+Antes de rodar o projeto, é necessário ter o **Node.js** instalado em sua máquina. Para isso, siga as instruções abaixo:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Instalação do Node.js
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Acesse o [site oficial do Node.js](https://nodejs.org).
+2. Baixe a versão LTS (Long Term Support) mais recente.
+3. Siga as instruções de instalação de acordo com seu sistema operacional.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 💻 Rodar o Projeto
 
-### `npm run eject`
+Para rodar este projeto localmente, siga as orientações abaixo:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone o repositório
+ 
+```powershell
+git clone https://github.com/ArthurGuilher62/projeto_react.git
+```
+2. Acesse o diretório do projeto
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```powershell
+cd projeto_react
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Instale as dependências:
 
-## Learn More
+```powershell
+npm install
+```
+```powershell
+npm install react-router-dom --save
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Execute o projeto:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```powershell
+npm start
+```
+### Resultado
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Acesse http://localhost:3000/ , para poder acessar a Lista de Tarefas.
