@@ -67,4 +67,4 @@ npm start
 ```
 ### Resultado
 
-Acesse http://localhost:3000/ , para poder acessar a Lista de Tarefas.
+Acesse http://localhost:3000/ , para poder acessar a Lista de Contatos.
