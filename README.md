@@ -47,7 +47,7 @@ git clone https://github.com/ArthurGuilher62/projeto_react.git
 2. Acesse o diretório do projeto
 
 ```powershell
-cd projeto_react
+cd projeto_react_A
 
 ```
 
