@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { v4 as uuid } from "uuid"; // Usando v4 para gerar um UUID único
+import { v4 as uuid } from "uuid";
 import './App.css';
 import Header from "./Header";
 import AddContact from "./AddContact";
@@ -12,32 +12,34 @@ function App() {
 
   const AddContactHandler = (contact) => {
     const newContact = { ...contact, id: uuid() };
-    setContacts((prevContacts) => [...prevContacts, newContact]); 
+    setContacts((prevContacts) => [...prevContacts, newContact]);
   };
 
-  const removeContactHandler = (id) =>{
-    const newContactList = contacts.filter((contact) =>{
-      return contact.id !== id;
-    })
+  const removeContactHandler = (id) => {
+    const newContactList = contacts.filter((contact) => contact.id !== id);
     setContacts(newContactList);
-  }
+  };
 
 
   useEffect(() => {
     const retriveContacts = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
     if (retriveContacts && Array.isArray(retriveContacts)) {
-      setContacts(retriveContacts); 
+      setContacts(retriveContacts);
     }
   }, []);
+
 
   useEffect(() => {
     if (contacts.length > 0) {
       localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(contacts));
+    } else {
+      
+      localStorage.removeItem(LOCAL_STORAGE_KEY);
     }
   }, [contacts]);
 
   return (
-    <Router> {/* Move the Router here, wrapping the entire app */}
+    <Router>
       <div className="ui container">
         <Header />
         <Routes>
